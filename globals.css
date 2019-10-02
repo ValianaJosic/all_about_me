@@ -1,0 +1,33 @@
+body {
+    margin: 0
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  a {
+
+    text-decoration: none;
+
+  }
+
+  nav a:hover {
+
+    background-color: gray;
+
+  }
+
+  * {
+
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+  }
+
+  main {
+  margin-top: 65px;
+}
+
+ul {
+  padding: 0;
+}
