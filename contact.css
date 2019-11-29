@@ -43,6 +43,9 @@ h1 {
   }
 
   button:hover, input[type="reset"]:hover {
-    background-color: gray;
+    background-color: blue;
   }
   
+  .nav{
+    background-color: cornflowerblue;
+  }
