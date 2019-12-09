@@ -3,9 +3,31 @@ h1 {
   }
   
   main {
-     padding:0 20px;
+     padding: 20px;
   
   }
+
+  body{
+    background-image: url(contact-photo.jpeg);
+  }
+
+  #profile-pic {
+
+    border-radius: 100%;
+    width:300px;
+    height:300px;
+  
+}
+
+.img-div{
+  display: flex;
+  justify-content: flex-end;
+}
+
+#profile-pic:hover {
+  transform: scale(1.1);
+  transition: scale(1,1);
+}
 
   textarea {
     resize: none;
@@ -47,5 +69,6 @@ h1 {
   }
   
   .nav{
-    background-color: #90caca;
+    background-color: transparent;
+    font-family: 'Dancing Script', cursive;
   }
