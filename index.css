@@ -1,6 +1,7 @@
 main {
 
     text-align: center;
+    padding-top: 60px;
     
 }
 
@@ -64,4 +65,8 @@ width: 100%
 
   .nav{
     background-color: transparent;
+  }
+
+  .current-page{
+    background-color:   #90caca;
   }

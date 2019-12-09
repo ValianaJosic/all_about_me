@@ -54,21 +54,28 @@ h1 {
     }
   }
 
-  button, inout[type="reset"] {
+  button, input[type="reset"] {
   background-color: #90caca;
   color: white;
   padding: 15px;
   font-size: 1rem;
   border: 0; 
   cursor: pointer;
-  transition: background-color: 0.3;
+  transition: 0.3;
+  border-radius:20px;
   }
 
   button:hover, input[type="reset"]:hover {
-    background-color:  #90caca;
+    background-color: white;
+    border-radius: 20px;
+    color:#90caca;  
   }
   
   .nav{
     background-color: transparent;
     font-family: 'Dancing Script', cursive;
+  }
+
+  .current-page{
+    background-color:   #90caca;
   }
