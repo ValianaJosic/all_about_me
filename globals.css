@@ -9,12 +9,14 @@ body {
   a {
 
     text-decoration: none;
+    color: white;
+    font-size: 40px;
 
   }
 
   nav a:hover {
 
-    background-color: blue;
+    background-color:   #90caca;
 
   }
 

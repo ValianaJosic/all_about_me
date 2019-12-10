@@ -5,6 +5,7 @@ position: fixed;
 top: 0;
 left: 0;
 right: 0;
+font-family: 'Dancing Script', cursive;
 
 }
 
@@ -19,6 +20,8 @@ nav > ul {
     padding: 15px;
   }
 
-  .current-page{
-    background-color: cornflowerblue;
-  }
+.nav-page{
+  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+  border-radius: 20px;
+}
