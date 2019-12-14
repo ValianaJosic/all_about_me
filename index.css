@@ -92,17 +92,17 @@ width: 100%
 
   .projects{
     font-family: 'Dancing Script', cursive;
-    font-size: 50px;
+    font-size: 80px;
     font-weight: bold;
     background-color: rgba(144,202,202, 0.7) ;
   }
 
   .project-link{
     font-family: 'Oleo Script', cursive;
+    color: #90caca;
     font-size: 50px;
     text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
-    padding-bottom: 350px;
-  
+    padding-top: 200px;
   }
 
   #profile-pic {
