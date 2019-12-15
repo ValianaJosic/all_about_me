@@ -7,7 +7,7 @@ body{
 }
 
 .projects-div{
-  padding-top: 80px;
+  padding-top: 90px;
 }
 
 #language-list{
@@ -17,4 +17,10 @@ body{
 iframe{
   border-radius: 20px;
  
+}
+
+.git-icon{
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
 }
