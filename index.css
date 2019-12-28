@@ -8,7 +8,7 @@ main {
 html, body{
   height: 100%;
 }
-body , .nav{ 
+body { 
 			background-image: url(profile-pc2.jpeg) ;
 			background-position: center center;
 			background-repeat:  no-repeat;
@@ -221,4 +221,10 @@ div, body{
   -webkit-transition:.5s;
   transition:.5s;
   
+}
+
+.nav{
+      background-image: url(profile-pc2.jpeg) ;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
 }
