@@ -7,7 +7,7 @@ h1 {
   
   }
 
-  body, .nav{
+  body{
     background-image: url(contact-photo.jpeg);
     background-position: center center;
     background-repeat:  no-repeat;
@@ -197,3 +197,8 @@ form{
   } 
 }
 
+.nav{
+  background-image: url(contact-photo.jpeg);
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+}
