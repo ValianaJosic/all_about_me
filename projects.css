@@ -1,4 +1,4 @@
-body{
+body , .nav{
   background-image: url(office2.jpg);
   background-position: center center;
   background-repeat:  no-repeat;
@@ -130,7 +130,3 @@ color: #90caca;
   width: 150px;
 }
 
-.nav{
-  background-color: 
-  #ebebeb;
-}

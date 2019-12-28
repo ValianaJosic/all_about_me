@@ -7,7 +7,7 @@ h1 {
   
   }
 
-  body{
+  body, .nav{
     background-image: url(contact-photo.jpeg);
     background-position: center center;
     background-repeat:  no-repeat;
@@ -196,3 +196,4 @@ form{
             transform: scale3D(0, 0, 1);
   } 
 }
+
