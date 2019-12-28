@@ -15,6 +15,14 @@ h1 {
     background-size: cover;
   }
 
+  input:focus { 
+    outline: solid 4px #90caca 
+  }
+
+  textarea:focus{
+    outline: solid 4px #90caca
+  }
+
   #profile-pic {
 
     border-radius: 100%;
