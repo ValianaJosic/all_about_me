@@ -223,7 +223,12 @@ div, body{
 }
 
 #cert{
-  width: 500px;
-  height: 400px;
+  width: 450px;
+  height: 350px;
   padding-bottom: 20px;
+}
+
+#cert:hover {
+  transform: scale(1.2);
+  transition: scale(1.2);
 }
