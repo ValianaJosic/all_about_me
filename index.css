@@ -2,7 +2,6 @@ main {
 
     text-align: center;
     padding-top: 25px;
-    
 }
 
 html, body{
@@ -223,3 +222,8 @@ div, body{
   
 }
 
+#cert{
+  width: 500px;
+  height: 400px;
+  padding-bottom: 20px;
+}
