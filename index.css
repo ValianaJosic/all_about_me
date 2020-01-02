@@ -221,14 +221,3 @@ div, body{
   transition:.5s;
   
 }
-
-#cert{
-  width: 450px;
-  height: 350px;
-  padding-bottom: 20px;
-}
-
-#cert:hover {
-  transform: scale(1.2);
-  transition: scale(1.2);
-}
