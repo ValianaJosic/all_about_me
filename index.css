@@ -1,4 +1,4 @@
-main {
+.index-main {
 
     text-align: center;
     padding-top: 25px;
@@ -7,7 +7,7 @@ main {
 html, body{
   height: 100%;
 }
-body { 
+.index-body { 
 			background-image: url(profile-pc2.jpeg) ;
 			background-position: center center;
 			background-repeat:  no-repeat;
@@ -52,8 +52,9 @@ div, body{
 
   #language-list {
 
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    display:flex;
+    justify-content: center;
+    text-align: center;
   }
 
   ul {
@@ -94,6 +95,19 @@ div, body{
     color: #90caca;
     font-size: 50px;
     text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    display: flex;
+    justify-content: center;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+  }
+
+  .git-link{
+    font-family: 'Oleo Script', cursive;
+    color: #90caca;
+    font-size: 50px;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    display: flex;
+    justify-content: center;
     padding-top: 200px;
   }
 
