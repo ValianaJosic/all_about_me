@@ -23,25 +23,142 @@
           </ul>
       </nav>
       <main class="index-main"> 
-        <h1>Hello World!</h1>
-        <h2>My name is Valiana Josic</h2>
-        <div class="text-div">
-        <p class="message-resume message"> I'm a Junior Front End Developer and a proud
-            <a href="https://www.wyncode.co" target="_blank">
-                Wyncode Academy
-            </a> graduate.<br> I have experience with HTML, CSS, Javascript, React, Ruby, and Ruby on Rails.
-            <br> 
-            My eight years of hospitality experience, 
-            integrated with my new web development skills,
-            <br> 
-            make me a perfect fit to any development team! </p>
-      </div> 
-      <div class="img-div">
-          <img id="profile-pic" src="JosicValiana.jpg" alt="me"/>
-      </div> 
-      <a href="https://www.linkedin.com/in/valiana-josic/" target="_blank">
-       <i class="fab fa-linkedin social"></i>
-      </a>
+  
+      <div class="trail-body">
+
+        <div class="trail-slideshow-container">
+      
+        <div class="trail-nav-div">
+          <div class="trail-nav"></div>
+        </div>
+      
+        <div class="trail-progress-div">
+         <div class="trail-progress-bar" style='text-align: center;'>
+            <span class="dot" onclick='currentSlide(1)'></span>
+            <span class="dot" onclick='currentSlide(2)'></span>
+            <span class="dot" onclick='currentSlide(3)'></span>
+            <span class="dot" onclick='currentSlide(4)'></span>
+          </div>
+        </div>
+      
+        <div class="trail-carousel-div">
+          <div class="mySlides fade">
+      
+            <h1>Hello World!</h1>
+            <h2>My name is Valiana Josic</h2>
+        </div>
+          
+      
+          <div class="mySlides fade">
+      
+            <div class="text-div">
+              <p class="message-resume message"> I'm a Junior Front End Developer and a proud
+                  <a href="https://www.wyncode.co" target="_blank">
+                      Wyncode Academy
+                  </a> graduate.<br> I have experience with HTML, CSS, Javascript, React, Ruby, and Ruby on Rails.
+                  <br> 
+                  My eight years of hospitality experience, 
+                  integrated with my new web development skills,
+                  <br> 
+                  make me a perfect fit to any development team! </p>
+            </div> 
+          </div>
+      
+          <div class="mySlides fade">
+            
+            <div class="img-linkd">
+            <div class="img-div">
+              <img id="profile-pic" src="JosicValiana.jpg" alt="me"/>
+          </div> 
+          <a href="https://www.linkedin.com/in/valiana-josic/" target="_blank">
+           <i class="fab fa-linkedin social"></i>
+          </a>
+          </div>
+            <div class="trail-btn-div"><div class="trail-skip"></div></div></div>
+        
+          </div>
+          
+          <div class="trail-button">
+            <a class="trail-prev-index" onclick='plusSlides(-1)'>&#10094;</a>
+            <a class="trail-next-index" onclick='plusSlides(1)'>&#10095;</a>
+             <br/>
+          </div>
+      
+        </div>
+      
+      <script>
+      
+      var slideIndex = 1;
+      
+      var myTimer;
+      
+      var slideshowContainer;
+      
+      window.addEventListener("load",function() {
+          showSlides(slideIndex);
+          myTimer = setInterval(function(){plusSlides(1)}, 4000);
+        
+          //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+          slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+        
+          //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+          // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+        
+          slideshowContainer && slideshowContainer.addEventListener('mouseenter', pause)
+          slideshowContainer && slideshowContainer.addEventListener('mouseleave', resume)
+      })
+      
+      // NEXT AND PREVIOUS CONTROL
+      function plusSlides(n){
+        clearInterval(myTimer);
+        if (n < 0){
+          showSlides(slideIndex -= 1);
+        } else {
+         showSlides(slideIndex += 1); 
+        }
+        
+        //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+        
+        if (n === -1){
+          myTimer = setInterval(function(){plusSlides(n + 2)}, 7000);
+        } else {
+          myTimer = setInterval(function(){plusSlides(n + 1)}, 7000);
+        }
+      }
+      
+      //Controls the current slide and resets interval if needed
+      function currentSlide(n){
+        clearInterval(myTimer);
+        myTimer = setInterval(function(){plusSlides(n + 1)}, 7000);
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n){
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        if (slides[slideIndex - 1]) slides[slideIndex-1].style.display = "block";
+        if (dots[slideIndex -1]) dots[slideIndex-1].className += " active";
+      }
+      
+      pause = () => {
+        clearInterval(myTimer);
+      }
+      
+      resume = () =>{
+        clearInterval(myTimer);
+        myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+      }
+      
+      </script>
 
         </main>
 
