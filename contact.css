@@ -16,11 +16,11 @@ h1 {
   }
 
   input:focus { 
-    outline: solid 4px #90caca 
+    outline: solid 5px #90caca 
   }
 
   textarea:focus{
-    outline: solid 4px #90caca
+    outline: solid 5px #90caca
   }
 
   #profile-pic {
